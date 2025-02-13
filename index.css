@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
 
 * {
     box-sizing: border-box;
@@ -13,16 +15,16 @@
     src: url(fonts/Poppins-Bold.ttf);
 }
 
-h1 {
+header > h1 {
     background-color: rgba(0, 0, 0, 40%);
-    color: white;
     font-family: DDDIsometric;
     text-align: center;
     font-size: 6dvw;
+    color: white;
     padding: 20px;
 }
 
-h3 {
+header > h3 {
     background-color: rgba(0, 0, 0, 40%);
     border-top: 1px solid rgba(255, 255, 255, 40%);
     font-family: Poppins;
@@ -32,8 +34,55 @@ h3 {
 }
 
 header {
-    background-image: url(img/screenshot_1.jpg);
-    background-size: 100%;
-    height: 400px;
+    background-image: url(./img/screenshot_1.jpg);
+    background-position: center 62%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
+    flex-direction: row;
+    display: flex;
+}
+
+main > div {
+    flex-grow: 1;
+}
+
+#slidingimg_wrapper {
+    flex-direction: column;
+    justify-content: end;
+    padding: 30px;
+    display: flex;
+}
+
+#slidingimg {
+    margin-right: 30px;
+    margin-top: 30px;
+    height: 200px;
+}
+
+#content {
+    padding: 10px;
+}
+
+#content h1 {
+    font-family: 'Passion One';
+    margin-bottom: 10px;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+#content p {
+    font-family: 'Changa';
+    text-align: justify;
+    line-height: 1.3em;
+    font-weight: 500;
+    font-size: 1.1em;
+}
+
+#content ul {
+    padding-left: 30px;
+    margin-top: 5px;
 }
 
