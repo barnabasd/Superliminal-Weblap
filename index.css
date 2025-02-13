@@ -49,6 +49,10 @@ main > div {
     flex-grow: 1;
 }
 
+#rightside img {
+    height: 200px;
+}
+
 #slidingimg_wrapper {
     flex-direction: column;
     justify-content: end;
@@ -59,7 +63,6 @@ main > div {
 #slidingimg {
     margin-right: 30px;
     margin-top: 30px;
-    height: 200px;
 }
 
 #content {
