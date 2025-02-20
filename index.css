@@ -41,28 +41,27 @@ header {
 }
 
 main {
-    flex-direction: row;
-    display: flex;
+    grid-template-columns: auto auto;
+    display: grid;
 }
 
 main > div {
     flex-grow: 1;
 }
 
+#rightside {
+    padding: 50px;
+}
+
 #rightside img {
-    height: 200px;
+    display: flex;
+    justify-content: center;
 }
 
 #slidingimg_wrapper {
-    flex-direction: column;
-    justify-content: end;
+    justify-content: center;
     padding: 30px;
     display: flex;
-}
-
-#slidingimg {
-    margin-right: 30px;
-    margin-top: 30px;
 }
 
 #content {
@@ -89,3 +88,42 @@ main > div {
     margin-top: 5px;
 }
 
+#content iframe {
+    aspect-ratio: 16 / 9;
+    max-width: 700px;
+    width: 100%;
+}
+
+.buttons {
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    max-width: 700px;
+}
+
+.buttons button {
+    background-color: #c0c000;
+    border-radius: 10px;
+    border: none;
+    flex-grow: 1;
+    margin: 10px;
+}
+
+.buttons button span {
+    transition: transform 100ms cubic-bezier(.3, .7, .4, 1.5);
+    transform: translateY(-2px);
+    border: 2px solid #c0c000;
+    background-color: #ffff24;
+    border-radius: 10px;
+    display: block;
+    padding: 8px;
+}
+
+.buttons button span:hover {
+    transform: translateY(-4px);
+}
+
+.buttons button span:active {
+    transform: translateY(0px);
+}
