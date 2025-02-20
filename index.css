@@ -40,22 +40,19 @@ header {
     background-size: cover;
 }
 
-main {
-    grid-template-columns: auto auto;
-    display: grid;
-}
-
-main > div {
-    flex-grow: 1;
-}
-
-#rightside {
-    padding: 50px;
-}
-
-#rightside img {
+.row {
+    flex-direction: row;
     display: flex;
+}
+
+.imagewarpper {
+    padding: 20px;
+}
+
+.imagewarpper img {
     justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 #slidingimg_wrapper {
@@ -64,18 +61,18 @@ main > div {
     display: flex;
 }
 
-#content {
+main {
     padding: 10px;
 }
 
-#content h1 {
+main h1 {
     font-family: 'Passion One';
     margin-bottom: 10px;
     font-weight: 400;
     text-decoration: underline;
 }
 
-#content p {
+main p {
     font-family: 'Changa';
     text-align: justify;
     line-height: 1.3em;
@@ -83,12 +80,12 @@ main > div {
     font-size: 1.1em;
 }
 
-#content ul {
+main ul {
     padding-left: 30px;
     margin-top: 5px;
 }
 
-#content iframe {
+main iframe {
     aspect-ratio: 16 / 9;
     max-width: 700px;
     width: 100%;
