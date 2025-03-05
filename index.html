@@ -8,62 +8,172 @@
     <meta charset="UTF-8">
 </head>
 <body>
-    <header>
-        <h1>Superliminal</h1>
-        <h3>A látszat a valóság.</h3>
+    <div id="bgcolor"></div>
+    <header style="border-bottom: 2px  black;">
+        <div style="display: flex;">
+            <img src="./img/logo.png" alt="Superliminal logo">
+            <h2 class="center">A látszat a valóság</h2>
+        </div>
     </header>
     <main>
-        <div class="row">
-            <div id="content">
-                <h1>A játék története</h1>
-                <p>A Superliminal kihasználja az optikai illúziókat, és ezek segítségével kell különböző feladatokat megoldani. A játék történetében egy klinikában kezdődik ahol álomterápiás kezelés része leszel. Az elején minden jól megy, de egy idő után elveszel az álomban és nem tudják az orvosok, hogy hol vagy. Megpróbálnak mindent, hogy kihozzanak, de nem sikerül ezért végig kell menned az álmod olyan részein amit már nem irányítanak. A játék végén kiderül, hogy mindez egész végig el volt tervezve és a terápia része volt.</p>
-                <p><br>A játék a következő mechanikákat is használja:</p>
-                <ul>
-                    <li><p>Perspektíva kihasználása</p></li>
-                    <li><p>Játékelemek klónozása</p></li>
-                    <li><p>Protálok és teleportálás</p></li>
-                </ul>
-                <br>
-                <h1>Easter eggek</h1>
-                <p>A játékban több nagyobb és kisebb összegyűjthető <i>easter egg</i> van, mint például:</p>
-                <ul>
-                    <li><p>Tűzoltókészülékek (88)</p></li>
-                    <li><p>Tűzjelzők (65)</p></li>
-                    <li><p>Sakkbábúk (19)</p></li>
-                    <li><p>Alaprajzok (34)</p></li>
-                    <li><p>Csillagképek (8)</p></li>
-                </ul>
-                <p>Ha az egyik típúsból össze lesz gyűjtve az összes, steam mérföldkövet lehet kapni.</p>
-                <br>
+        <div class="imagewrapper">
+            <div class="magic" data-scroll-divider="4" data-rotate-divider="5" data-rotate-add="0" data-pos="20-3" data-rotate-positive="false">
+                <img src="./img/chesspiece.png" alt="Chess piece" height="140">
             </div>
-            <div class="imagewrapper">
-                <div id="slidingimg_wrapper">
-                    <img src="./img/chesspiece.png" alt="Chess piece" id="slidingimg" width="130">
-                </div>
+            <div class="magic" data-scroll-divider="4" data-rotate-divider="5" data-rotate-add="28" data-pos="60-20" data-rotate-positive="true">
+                <img src="./img/alarm_clock.png" alt="Alarm clock" width="145">
+            </div>
+            <div class="magic" data-scroll-divider="4" data-rotate-divider="5" data-rotate-add="0" data-pos="15-38" data-rotate-positive="true">
+                <img src="./img/apple_dice.png" alt="Apple dice">
+            </div>
+            <div class="magic" data-scroll-divider="4" data-rotate-divider="5" data-rotate-add="40" data-pos="55-55" data-rotate-positive="true">
+                <img src="./img/exit_sign.png" alt="Exit sign" width="150">
+            </div>
+            <div class="magic" data-scroll-divider="3" data-rotate-divider="5" data-rotate-add="132" data-pos="15-65" data-rotate-positive="true">
+                <img src="./img/Fire_Alarm.png" alt="Fire alarm" height="95">
+            </div>
+            <div class="magic" data-scroll-divider="3" data-rotate-divider="5" data-rotate-add="674" data-pos="75-75" data-rotate-positive="true">
+                <img src="./img/cube_chessboard.png" alt="Chessboard cube">
+            </div>
+            <div class="magic" data-scroll-divider="3" data-rotate-divider="5" data-rotate-add="480" data-pos="55-95" data-rotate-positive="true">
+                <img src="./img/Fire_Extinguisher.png" alt="Fire extinguisher" height="200">
             </div>
         </div>
-        <div class="row">
-            <div class="imagewrapper">
-                <img src="./img/alarm_clock.png" alt="Alarm clock" width="230">
+        <div id="content">
+            <h1>A játék története</h1>
+            <p>A Superliminal kihasználja az optikai illúziókat, és ezek segítségével kell különböző feladatokat
+                megoldani. A játék történetében egy klinikában kezdődik ahol álomterápiás kezelés része leszel. És egyész végig Dr. Glenn Pierce (az orvos) Az
+                elején minden jól megy, de egy idő után elveszel az álomban és nem tudják az orvosok, hogy hol vagy.
+                Megpróbálnak mindent, hogy kihozzanak, de nem sikerül ezért végig kell menned az álmod olyan részein
+                amit már nem irányítanak. A játék végén kiderül, hogy mindez egész végig el volt tervezve és a
+                terápia része volt.</p>
+            <p><br>A játék a következő mechanikákat is használja:</p>
+            <ul>
+                <li>
+                    <p>Perspektíva kihasználása</p>
+                </li>
+                <li>
+                    <p>Játékelemek klónozása</p>
+                </li>
+                <li>
+                    <p>Protálok és teleportálás</p>
+                </li>
+            </ul>
+            <br>
+            <h1>Easter eggek</h1>
+            <p>A játékban több nagyobb és kisebb összegyűjthető <i>easter egg</i> van, mint például:</p>
+            <ul>
+                <li>
+                    <p>Tűzoltókészülékek (88)</p>
+                </li>
+                <li>
+                    <p>Tűzjelzők (65)</p>
+                </li>
+                <li>
+                    <p>Sakkbábúk (19)</p>
+                </li>
+                <li>
+                    <p>Alaprajzok (34)</p>
+                </li>
+                <li>
+                    <p>Csillagképek (8)</p>
+                </li>
+            </ul>
+            <p>Ha az egyik típúsból össze lesz gyűjtve az összes, steam mérföldkövet lehet kapni.</p>
+            <br>
+            <h1>Szintek</h1>
+            <p>Egyjátékos módban a játékmenet kilenc szintre oszlik. Minden szintnek megvan a maga külön témája, amely lazán kapcsolódik a szint nevéhez. Például a Clone a klónozó mechanikát használja az egész szinten. Ezek a témák nem feltétlenül egy konkrét mechanikáról szólnak ; szólhatnak a szint környezetéről vagy a történet egy fejezetéről is.</p><br>
+            <p>A legtöbb szint általában azzal kezdődik, hogy a játékos egy ébresztőóra hangjára ébred egy hálószobában, és a liftbe való belépéssel ér véget. Ez azonban nem mindig így van, mivel egyes szintek nem lifttel érnek véget. Ez a helyzet Induction, Labyrinth, Whitespace és a Retrospect esetében is.</p><br>
+            <p>A szintek nem korlátozódnak egymechanikára, mivel néhány időnként megjelenik a játék későbbi szakaszaiban is.</p><br>
+            <ul>
+                <li>
+                    <p><u>Induction:</u></p>
+                </li>
+            </ul>
+            <p>Az Induction a Superliminal első szintje. A játék „bevezető szintjeként” ismert, mivel a játékosok először ezen a szinten tanulják meg, hogyan használják a játék első mechanikáját (perspektívával méretezhető tárgyak) mechanikáját.</p>
+            <br>
+            <ul>
+                <li>
+                    <p><u>Optical:</u></p>
+                </li>
+            </ul>
+            <p>Az Optical a Superliminal második szintje. Ez a szint az optikai illúziókra összpontosít egy díszes szállodai környezetben. Ezen a szinten egy új mechanika kerül bevezetésre, ahol a falon lévő tárgyak sík vetületei, amelyeket megfelelő perspektívából néznek, tényleges háromdimenziós tárgyakká válhatnak, amikor megragadják.</p>
+            <br>
+            <ul>
+                <li>
+                    <p><u>Cubism:</u></p>
+                </li>
+            </ul>
+            <p>A Cubism a Superliminal harmadik szintje. Ez a szint egy objektum tulajdonságaira összpontosít, ebben az esetben a kocka. Itt felrobbanhatnak, félbe vághatnak és még sok minden más. A Standard Orientation Protocol azt mondja a játékosnak, hogy a lehető leghamarabb lépjen ki erről a szintről.</p>
+            <br>
+            <ul>
+                <li>
+                    <p><u>Blackout:</u></p>
+                </li>
+            </ul>
+            <p>A Blackout a Superliminal negyedik szintje. Ez a szint ijesztő hangulatot áraszt, és a rejtvények többsége a sötétben való navigálásra és a területek lámpákkal való megvilágítására összpontosít, például egy világos tábla segítségével a dobozok sötét labirintusát. Ezen a szinten Dr. Glenn Pierce leginkább a játékos értéktelenségérzéséről és önbizalomhiányáról fog beszélni. A pálya egy horrorjáték témáját követi, és elhiteti a játékossal, hogy valami üldözi őket.</p>
+            <br>
+            <ul>
+                <li>
+                    <p><u>Clone:</u></p>
+                </li>
+            </ul>
+            <p>A Clone a Superliminal ötödik szintje. Az ezen a szinten bemutatott fő mechanika a klónozás. A játékosok bármennyire klónozhatták a megragadható tárgyakat. Ez igazán kreatív és néha nehéz rejtvényeket eredményez.</p>
+            <br>
+            <ul>
+                <li>
+                    <p><u>Dollhouse:</u></p>
+                </li>
+            </ul>
+            <p>A Dollhouse a Superliminal hatodik szintje. Ezen a szinten a legtöbb rejtvény portálmechanikát használ, amely tetszés szerint mozgatható és átméretezhető. Ez a szint ad otthont Dr. Glenn Pierce kedvenc idézetének.</p>
+            <br>
+            <ul>
+                <li>
+                    <p><u>Labyrinth:</u></p>
+                </li>
+            </ul>
+            <p>A Labyrinth a Superliminal hetedik szintje. Ez a szint egy új karaktert vezetett be, az Emergency Exit Protocol-t. Sajnos ez a karakter nagyon rövid életű a többi karakterhez képest, mindössze másodpercek a képernyőideje.</p>
+            <p>A Labyrinth egyben azt az időt is jelzi, amikor az álomvilág "nagy összeomlása" kezdett, amiről azt feltételezik, hogy a játékos robbanásszerű mentális túlterhelése okozta. Ez a szint nem euklideszi tereket, gravitációs átfordulásokat, tárgyakkal való instabil reakciókat, múltbeli szobák hasonlóságait és így tovább.</p>
+            <br>
+            <ul>
+                <li>
+                    <u><p>Whitespace:</p></u>
+                </li>
+            </ul>
+            <p>A Whitespace a Superliminal nyolcadik szintje. Ezen a szinten a Labyrinth "letörése" még kritikusabbá vált, mivel a játékos véletlenül egy álomba kerül, ahová egyetlen beteg sem juthat be. A pálya a paradoxonok megtörésének és egy túlvilági földre lépésnek a témáját követi.</p>
+            <br>
+            <ul>
+                <li>
+                    <u><p>Retrospect:</p></u>
+                </li>
+            </ul>
+            <p>A Retrospect a Superliminal kilencedik és egyben utolsó szintje. Ezen a szinten Dr. Glenn Pierce összefoglalja a játékost, hogy mit csináltak az előző fejezetekben.</p>
+            <p>Bár rövid volt, néhány játékos arról számolt be, hogy érzelmi gondolataik és érzései vannak ezen a szinten, valószínűleg a lejátszott érzelmes zene és Dr. Pierce utolsó üzenete miatt.</p>
+            <br>
+        </div>
+        <div>
+            <h1>Speedrunning</h1>
+            <p>A 2019-es játéknak még a mai napig is nagyon aktív a speedrunning közösége. Két <a
+                    href="https://speedrun.com" target="_blank">speedrun.com</a> oldala van:</p>
+            <div class="buttons">
+                <button onclick="window.open('https://www.speedrun.com/superliminal', '_blank').focus();"><span>Normál
+                        kategóriák</span></button>
+                <button onclick="window.open('https://www.speedrun.com/superliminal_ce', '_blank').focus();"><span>Kiterjesztett
+                        kategóriák</span></button>
             </div>
-            <div>
-                <h1>Speedrunning</h1>
-                <p>A 2019-es játéknak még a mai napig is nagyon aktív a speedrunning közösége. Két <a href="https://speedrun.com">speedrun.com</a> oldala van:</p>
-                <div class="buttons">
-                    <button onclick="location.href='https://www.speedrun.com/superliminal'"><span>Normál kategóriák</span></button>
-                    <button onclick="location.href='https://www.speedrun.com/superliminal_ce'"><span>Kiterjesztett kategóriák</span></button>
-                </div>
-                <p>A világrekordot a Holland first_try_i_swear tartja:</p>
-                <iframe src="https://www.youtube.com/embed/Wvv4xMtMrYM?si=VEYSAAQlhLwWEcns" title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <br>
-                <h1>Egyéb linkek</h1>
-                <div class="buttons">
-                    <button onclick="location.href=''"><span>Steam oldal</span></button>
-                    <button onclick="location.href=''"><span>Wikipédia</span></button>
-                </div>
+            <p>A világrekordot a Holland first_try_i_swear tartja:</p>
+            <iframe src="https://www.youtube.com/embed/Wvv4xMtMrYM?si=VEYSAAQlhLwWEcns" title="YouTube video player"
+                frameborder="0" allow="autoplay; encrypted-media; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <br>
+            <h1>Egyéb linkek</h1>
+            <div class="buttons">
+                <button onclick="window.open('https://store.steampowered.com/app/1049410/Superliminal/', '_blank').focus()"><span>Steam oldal</span></button>
+                <button onclick="window.open('https://en.wikipedia.org/wiki/Superliminal', '_blank').focus()"><span>Wikipédia</span></button>
             </div>
         </div>
     </main>
     <script src="./index.js"></script>
 </body>
+
 </html>
