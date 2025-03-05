@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@200;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap');
 
 * {
@@ -83,6 +83,13 @@ main h1 {
     font-weight: 400;
 }
 
+main h2 {
+    text-decoration: underline;
+    font-family: 'Passion One';
+    margin-bottom: 10px;
+    font-weight: 200;
+}
+
 main p {
     font-family: 'Changa';
     text-align: justify;
@@ -135,7 +142,7 @@ main iframe {
     transform: translateY(0px);
 }
 
-p, h1 {
+main p, main h1, main h2 {
     text-shadow:  2px  2px 7px #ffe6dd,
                  -2px -2px 7px #ffe6dd;
 }
